@@ -1,0 +1,18 @@
+body{
+    background-color: gray;
+}
+
+#teste{
+    width: 250px;
+    height: 200px;
+    background-color: rgb(23, 130, 23);
+    color: white;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#teste:hover{
+    color:red
+}
