@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sal Familia</title>
+    <link rel="stylesheet" href="salfamilia.css">
+</head>
+
+<body>
+    <div id="pagina">
+
+        <header>
+            <div id="banner"></div>
+        </header>
+        <main>
+            <div id="empregado">
+                <input type="text" name="nome" id="nome" placeholder="Empregado"><br>
+                <input type="number" name="filhos" id="filhos"
+                    placeholder="Quantidade de filhos menores 14 anos ou inválidos"><br>
+                <input type="number" step="0.01" name="salario" id="salario" placeholder="Salário Contribuição"><br>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Salário-contribuição</th>
+                        <th>Cota do Salário Família</th>
+                    </tr>
+                <tbody>
+                    <tr>
+                        <td>Até R$ 806,80</td>
+                        <td>R$ 41,37 por filho</td>
+                    </tr>
+                    <tr>
+                        <td>Entre R$ 806,81 e R$ 1.212,64</td>
+                        <td>R$ 29,16 por filho</td>
+                    </tr>
+                    <tr>
+                        <td>Mais de R$ 1.212,64</td>
+                        <td>Não há</td>
+                    </tr>
+                </tbody>
+
+                </thead>
+            </table>
+        </main>
+        <footer>
+            <div>
+                <a href="#" ><div id="calcular">Calcular</div></a>
+            </div>
+            <div id="resultado">Salario Familia :
+
+            </div>
+        </footer>
+    </div>
+
+    <script src="salfamilia.js"></script>
+</body>
+
+</html>

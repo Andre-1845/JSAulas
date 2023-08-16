@@ -26,3 +26,13 @@ main{
     justify-content: center;
     font-size: 25px;
 }
+
+#nomeBox{
+    height: 40px;
+}
+
+#resultado{
+    background-color: beige;
+    padding: 15px;
+    margin-top: 20px;
+}
