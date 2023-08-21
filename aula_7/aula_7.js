@@ -10,7 +10,7 @@ class Loja{
             console.log(this.produtos);
         };
 
-        this.cadastrar.Produtos = function(nomeProduto,corProduto,valorProduto){
+        this.cadastrarProdutos = function(nomeProduto,corProduto,valorProduto){
             this.produtos.push(new Produto(nomeProduto,corProduto,valorProduto));
             return `Produto : ${nomeProduto} foi adicionado`;
 
@@ -23,15 +23,6 @@ class Loja{
     };
 };
 
-console.log(Loja)
-
-var loja5 = new Loja ("aa","ww","mm","dd1");
-var nike = new Produto ("tenis","preto",230.00);
-
-console.log(nike);
-console.log(loja5);
-
-
 class Produto{
     constructor(nome,cor,valor){
         this.nome = nome;
@@ -39,6 +30,17 @@ class Produto{
         this.valor = valor;
     };
 };
+
+
+console.log(Loja)
+
+var loja5 = new Loja ("aa","ww","mm","dd1");
+var nike = new Produto ("tenis","preto",230);
+
+console.log(nike);
+console.log(loja5);
+
+
 
 // const dono = "Victor";
 // const netshoes = new Loja("Netshoes","W3Sul","Topper",dono);
