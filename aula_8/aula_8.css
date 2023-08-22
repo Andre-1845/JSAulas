@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(131, 131, 155);
+}
+
+.assunto{
+    width: 80%;
+    margin: opx auto;
+    padding: 20px;
+    background-color: rgb(18, 39, 196);
+}
+
+.assuntoCodigo{
+    width: 90%;
+    background-color: white;
+    padding: 5px;
+    margin: opx auto;
+}
+
