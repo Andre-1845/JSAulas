@@ -1,0 +1,19 @@
+#caixa{
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#alvo{
+    
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    border: 2px solid white;
+    margin-top: 300px;
+    margin-left: 500px;
+}

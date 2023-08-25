@@ -1,0 +1,14 @@
+*{
+    background-color: rgb(61, 116, 234);
+}
+
+#resultado{
+    width: 50%;
+    min-height: 20px;
+    background-color: white;
+}
+
+#calcular{
+    width: 100px;
+    height: 20px;
+}
