@@ -1,0 +1,15 @@
+#div1{
+    width: 50px;
+    background-color: aqua;
+    gap: 5px;
+}
+#div2{
+    width: 50px;
+    background-color: rgb(210, 246, 30);
+    gap: 5px;
+}
+#div3{
+    width: 50px;
+    background-color: rgb(7, 69, 43);
+    gap: 5px;
+}
