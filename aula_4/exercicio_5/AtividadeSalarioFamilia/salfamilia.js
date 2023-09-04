@@ -4,25 +4,22 @@ var nomeBox = document.getElementById("nome");
 var calcularBox = document.getElementById("calcular");
 var resultado = document.getElementById("resultado");
 
-var a = 806.8;
-var b = 1212.64;
-var valorA = 41.37;
-var valorB = 29.16;
-var cota = 1;
+a = 806.8;
+b = 1212.64;
+valorA = 41.37;
+valorB = 29.16;
+cota = 1;
 
-filhoBox.addEventListener("blur", validaFilhos);
-salarioBox.addEventListener("blur", validaSalario);
-calcularBox.addEventListener("click", calcularSalario);
 
-function validaFilhos() {
-  var filhoValor = filhoBox.value;
+function validaFilhos(){
+   var filhoValor = filhoBox.value;
   if (filhoValor < 0) {
     window.alert("Quantidade inválida!");
     filhoBox.style.backgroundColor = "yellow";
-    // location.reload();
+  
   } else {
-    filhoBox.style.backgroundColor = "white";
-    window.alert(filhoValor);
+    filhoBox.style.backgroundColor = "green";
+    
   }
   return;
 }
@@ -30,34 +27,37 @@ function validaFilhos() {
 function validaSalario() {
   var salarioValor = salarioBox.value;
   if (salarioValor < 0) {
-    window.alert("Valor inválido!");
-    salarioBox.style.backgroundColor = "yellow";
-    // location.reload();
-  } else {
-    salarioBox.style.backgroundColor = "green";
-    window.alert(salarioValor);
-    //window.alert(filhoValor);
+      window.alert("Valor inválido!");
+      salarioBox.style.backgroundColor = "yellow";
+    } else {
+      salarioBox.style.backgroundColor = "green";
+    
   }
-
+  
   if (salarioValor < a) {
-    cota = valorA;
-  } else if (salarioValor < b) {
-    cota = valorB;
-  } else {
-    cota = 1;
-  }
-  window.alert(cota);
+      cota = valorA;
+    } else if (salarioValor < b) {
+      cota = valorB;
+    } else {
+      cota = 1;
+ }
   return;
 }
 
+filhoBox.addEventListener("blur", validaFilhos);
+salarioBox.addEventListener("blur", validaSalario);
+calcularBox.addEventListener("click", calcularSalario);
+
+
 function calcularSalario() {
   var salarioFinal = filhoBox.value * cota;
-  // window.alert(filhoValor);
-  // window.alert(cota);
-  window.alert(salarioFinal);
-  window.alert("oi");
-  resultado.innerHTML = `O valor é de ${salarioFinal}`;
-  return;
+  if (salarioBox.value > b){
+    resultado.innerHTML = `Não faz jus a salario-familia`;
+  } else{
+    resultado.innerHTML = `O valor do Salario-familia é de ${salarioFinal}`;
+    }
+  
+return;
 }
 
 //var inputSalario = document.querySelector("#salario");

@@ -81,9 +81,10 @@ footer div a{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 250px;
+    width: 620px;
     height: 80px;
     background-color: coral;
     color: white;
     font-weight: bold;
+    margin: 10px 80px;
 }
