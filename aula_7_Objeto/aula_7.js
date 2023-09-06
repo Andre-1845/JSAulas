@@ -34,8 +34,9 @@ class Produto{
 
 console.log(Loja)
 
-var loja5 = new Loja ("aa","ww","mm","dd1");
+var loja5 = new Loja ("aa","tagua","mm","dd1");
 var nike = new Produto ("tenis","preto",230);
+loja5.nome = "Teste Loja 5";
 
 console.log(nike);
 console.log(loja5);
