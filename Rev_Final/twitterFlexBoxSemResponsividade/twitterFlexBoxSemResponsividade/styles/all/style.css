@@ -1,0 +1,365 @@
+/* ALL CONFIGS */
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(../../fonts/HelveticaNeue/HelveticaNeueLTPro-55Roman.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(../../fonts/HelveticaNeue/HelveticaNeueLTPro-75Bold.otf);
+    font-weight: bold;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: HelveticaNeue;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+aside{
+    width: 25%;
+    height: 100vh;
+}
+
+input{
+    background-color: #657786;
+    border: none;
+}
+
+p{
+    color: #657786;
+}
+
+button{
+    height: 50px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #1DA1F2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#colors{
+    background-color: #1DA1F2;  /*primary*/
+    background-color: #14171A;  /*secondary*/
+    background-color: #657786;  /*dark gray*/
+    background-color: #AAB8C2;  /*light gray*/
+    background-color: #E1E8ED;  /*extra light gray*/
+    background-color: #F5F8FA;  /*extra extra light gray*/
+    background-color: #FFFFFF;  /*white*/
+}
+/* PAGE */
+.numbers{
+    color: white;
+}
+
+#pagina{
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    background-color: #14171A;
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+    position: fixed;
+    top: 0%;
+    overflow: hidden;
+    background-color: #14171ada;
+}
+
+#logoSpace, #headerTittle , #search{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    height: 100%;
+    justify-content: start;
+    margin: 0px 40px;
+}
+#logo img{
+    width: 100%;
+    height: 100%;
+}
+
+#headerTittle{
+    justify-content: start;
+}
+
+#search{
+    justify-content: end;
+}
+
+#searchBar{
+    background-color: #24282c;
+    margin: 0px 40px;
+    display: flex;
+    align-items: center;
+}
+
+#searchBarIcon{
+    height: 100%;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+#searchBarIcon img{
+    width: 100%;
+    height: 100%;
+}
+
+#searchInput{
+    padding: 10px;
+    color: #657786;
+    margin: 0px 10px;
+    background-color: #24282c;
+}
+
+/* MAIN */
+
+/* selectors */
+.filterSelectors{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #657786;
+    margin: 5px 0px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    display: flex;
+    gap: 20px;
+}
+
+.filterSelection{
+    width: 200px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filterSelectorSelected{
+    border-bottom: 3px solid #44b1f4;
+    font-weight: bold;
+}
+
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* MENU */
+#menu{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+}
+
+nav{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.NavOption{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.optionIcon{
+    height: 100%;
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+}
+
+#userProfileMenu{
+    width: 80%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.5s;
+}
+
+.userInfoMenu{
+    display: flex;
+    align-items: center;
+}
+
+.UserPhotoMenu{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin: 0px 20px;
+}
+.UserPhotoMenu img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+
+/* FEED */
+#feed{
+    width: 50%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.space{
+    width: 100%;
+    height: 60px;
+}
+
+/* POSTS */
+.post{
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    margin: 0px auto;
+    border: 1px solid #657786;
+}
+
+.UserInfoPost{
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+.UserPhoto{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.UserPhoto img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.UserText{
+    width: auto;
+    height: 100%;
+    margin: 0px 20px;
+    color: white;
+}
+
+.harstags{
+    width: 100%;
+    height: 20px;
+    margin: 20px 0px;
+    color: #1DA1F2;
+}
+
+.imagePost{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.imagePost img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.menuPost{
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menuPostIcons{
+    height: 100%;
+    cursor: pointer;
+}
+.menuPostIcons img{
+    height: 100%;
+    width: 100%;
+}
+/* TOPICS */
+.topicsSections{
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    background-color: #657786;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.topic{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 100%;
+    height: 60px;
+}
+
+.topicConfig{
+    width: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Mobile Options */
+#UserMenuMobile, #headerSpace, #navMobile{
+    display: none;
+}
+
+/* INTERACTIONS */
+button:hover{
+    background-color: #47afef;
+}
+
+.NavOption:hover, #userProfileMenu:hover {
+    background-color: #2b2f35;
+    border-radius: 50px;
+    transition: 1s;
+} 
+
+/* responsividade - é colocado aqui para funcionar quando o @MEDIA não estiver em uso (telas grandes)*/ 
+
+#iconHeaderMobile{
+    display: none;
+}
